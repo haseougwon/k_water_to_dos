@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Document</title>
+  <style>
+    #signInBox {
+      position: absolute;
+      width: 571px;
+      height: 708px;
+      left: 578px;
+      top: 230px;
+
+      background: #FFE99C;
+      border-radius: 43px;
+    }
+    #signInText {
+      position: absolute;
+      width: 256px;
+      height: 77px;
+      left: 731px;
+      top: 280px;
+
+      font-family: 'Inter';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 77px;
+
+      color: #7B7A8E
+          }
+
+
+    #inputId {
+      position: absolute;
+      width: 479px;
+      height: 58px;
+      left: 624px;
+      top: 476px;
+
+      background: #FFFFFF;
+      border-radius: 10px;
+    }
+    #inputPw{
+      position: absolute;
+      width: 479px;
+      height: 58px;
+      left: 624px;
+      top: 651px;
+
+      background: #FFFFFF;
+      border-radius: 10px;
+    }
+    #logIn {
+      position: absolute;
+      width: 122px;
+      height: 43px;
+      left: 960px;
+      top: 850px;
+
+      background: #FFD43C;
+      border-radius: 10px;
+    }
+    #logInButtonText{
+      position: absolute;
+      width: 80px;
+      height: 39px;
+      left: 987px;
+      top: 841px;
+
+      font-family: 'Inter';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+
+
+      color: #7B7A8E;
+
+      
+    }
+  </style>
+</head>
+<body>
+   <img src="sign in.png" width="1728", height="1117">
+   <div id="signInBox"></div>
+   <h1 id="signInText">SIGN IN</h1>
+   <input id="inputId" placeholder="ID" type="text"/>
+  <input id="inputPw" placeholder="PASSWARD" type="text">
+  <div id="logIn"></div>
+  <h1 id="logInButtonText">log in</h1>
+  
+</img>
+  <script>
+    const inputId=document.querySelector('#inputId')
+    const inputPw = document.querySelector('#inputPw')
+    const btn = document.querySelector('#logIn')
+    const h1 = document.querySelector('#logInButtonText')
+    const getInputData = ()=> {
+      return {id : inputId.value, pw : inputPw.value}
+    }
+      
+    btn,h1.addEventListener  ('click', async () => {
+      const {id, pw} = await getInputData()
+      console.log (id,pw)
+      axios({
+        method : "post",
+        url : 'http://210.90.136.10:3000/auth/login',
+        data : {id, pw},
+      }).then((res) =>{if(!res.data) {alert(err)}
+      else {window.location.replace('./main.html')}})
+      .catch((err) => (console.log('error')))})
+    
+  </script>
+</body>
+</html>
