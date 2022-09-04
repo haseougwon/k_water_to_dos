@@ -49,7 +49,7 @@
     background: #FFFFFF;
     border-radius: 10px;
 }
-#inputPwChack {
+#inputPwCheck {
     position: absolute;
     width: 479px;
     height: 58px;
@@ -58,7 +58,7 @@
     background: #FFFFFF;
     border-radius: 10px;
 }
-#join{
+.joinBtn{
     position: absolute;
     width: 122px;
     height: 43px;
@@ -66,17 +66,25 @@
     top: 850px;
     background: #FFD43C;
     border-radius: 10px;
-}
-#joinButtonText{
-    position: absolute;
-    width: 57px;
-    height: 29px;
-    left: 998px;
-    top: 841px;
-    font-family: 'Inter';
+    border-color: #FFD43C;
+    font-family: 'inter';
     font-style: italic;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #7B7A8E;
+
+    
+}
+
+body {
+    width: 1728px;
+    height: 1117px;
+    margin: 0px;
+}
+#backgroundImg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/signIn.png');
+    display:block
 }
