@@ -1,0 +1,90 @@
+#signUpBox{
+    position: absolute;
+    width: 571px;
+    height: 708px;
+    left: 578px;
+    top: 230px;
+    background: #FFE99C;
+    border-radius: 43px;
+}
+#signUpText {
+    position: absolute;
+    width: 259px;
+    height: 77px;
+    left: 731px;
+    top: 230px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 77px;
+    color: #7B7A8E;
+}
+#inputName {
+    position: absolute;
+    width: 479px;
+    height: 58px;
+    left: 624px;
+    top: 394px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+#inputId {
+    position: absolute;
+    width: 479px;
+    height: 58px;
+    left: 624px;
+    top: 476px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+}
+#inputPw {
+    position: absolute;
+    width: 479px;
+    height: 58px;
+    left: 624px;
+    top: 558px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+#inputPwCheck {
+    position: absolute;
+    width: 479px;
+    height: 58px;
+    left: 624px;
+    top: 640px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.joinBtn{
+    position: absolute;
+    width: 122px;
+    height: 43px;
+    left: 960px;
+    top: 850px;
+    background: #FFD43C;
+    border-radius: 10px;
+    border-color: #FFD43C;
+    font-family: 'inter';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #7B7A8E;
+
+    
+}
+
+body {
+    width: 1728px;
+    height: 1117px;
+    margin: 0px;
+}
+#backgroundImg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/signIn.png');
+    display:block
+}
