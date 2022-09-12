@@ -1,77 +1,73 @@
 body {
-    width: 1728px;
-    height: 1117px;
+  width: 1728px;
+  height: 1117px;
 }
 
-#clickSignUpBox 
-{
-box-sizing: border-box;
+#clickSignUpBox {
+  box-sizing: border-box;
 
-position: absolute;
-width: 321px;
-height: 68px;
-left: 704px;
-top: 670px;
+  position: absolute;
+  width: 321px;
+  height: 68px;
+  left: 704px;
+  top: 670px;
 
-opacity: 0.9;
-border: 3px solid #000000;
-border-radius: 50px;
+  opacity: 0.9;
+  border: 3px solid #000000;
+  border-radius: 50px;
 }
 
-#clickSignInBox
-{
-box-sizing: border-box;
+#clickSignInBox {
+  box-sizing: border-box;
 
-position: absolute;
-width: 321px;
-height: 68px;
-left: 704px;
-top: 761px;
+  position: absolute;
+  width: 321px;
+  height: 68px;
+  left: 704px;
+  top: 761px;
 
-opacity: 0.9;
-border: 3px solid #000000;
-border-radius: 50px;
+  opacity: 0.9;
+  border: 3px solid #000000;
+  border-radius: 50px;
 }
-#signUpText{
-position: absolute;
-width: 144px;
-height: 48px;
-left: 792px;
-top: 650px;
+#signUpText {
+  position: absolute;
+  width: 144px;
+  height: 48px;
+  left: 792px;
+  top: 650px;
 
-font-family: 'Inter';
-font-style: italic;
-font-weight: 700;
-font-size: 40px;
-line-height: 48px;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
 
-color: #FFFFFF;
-
+  color: #ffffff;
 }
-#signInText{
-position: absolute;
-width: 129px;
-height: 48px;
-left: 800px;
-top: 741px;
+#signInText {
+  position: absolute;
+  width: 129px;
+  height: 48px;
+  left: 800px;
+  top: 741px;
 
-font-family: 'Inter';
-font-style: italic;
-font-weight: 700;
-font-size: 40px;
-line-height: 48px;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 body {
-    width: 1728px;
-    height: 1117px;
-    margin: 0px;
-    margin: 0px;
-  }
-  #backgroundImg {
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/image2.png');
-    
-  }
+  width: 1728px;
+  height: 1117px;
+  margin: 0px;
+  margin: 0px;
+}
+#backgroundImg {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/image2.png');
+}

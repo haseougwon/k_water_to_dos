@@ -4,6 +4,12 @@ const pwc = document.querySelector("#inputPwCheck")
 const name = document.querySelector("#inputName")
 const btn = document.querySelector(".joinBtn")
 
+/**
+ * PW, PWC를 받아서 같은 지 검사 후 boolean 반환
+ * @param {string} pw
+ * @param {string} pwc
+ * @returns {boolean}
+ */
 const checkSameValue = (pw, pwc) => {
   if (pw !== pwc) return false
   return true
@@ -17,24 +23,29 @@ const checkNullValue = (arr) => {
   for (const value of arr) {
     if (!value) return false
   }
-
   return true
 }
 
-btn.addEventListener("click", async () => {
-  const { id, pw, pwc, name } = getInputData()
-  if (!checkNullValue([id, pw, pwc, name])) return alert("NULL ERROR")
-  if (!checkSameValue(pw, pwc)) return alert("NOT SAME ERROR")
-
-  axios({
+const callApi = async (id, pw, name) => {
+  const config = {
     method: "post",
     url: "http://210.90.136.10:3000/auth/",
     data: { id, pw, name },
-  })
-    .then((res) => {
-      if (!res.data) alert("err")
-      else window.location.replace("./login.html")
-    })
+  }
+  try {
+    const { data } = await axios(config)
+    return data
+  } catch (err) {
+    return alert(err)
+  }
+}
 
-    .catch((err) => console.log(err))
-})
+const onClick = async () => {
+  const { id, pw, pwc, name } = getInputData()
+  if (!checkNullValue([id, pw, pwc, name])) return alert("NULL ERROR")
+  if (!checkSameValue(pw, pwc)) return alert("NOT SAME ERROR")
+  const data = await callApi(id, pw, name)
+  data ? (window.location.href = "./login.html") : alert("err")
+}
+
+btn.addEventListener("click", onClick)

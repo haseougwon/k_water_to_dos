@@ -3,12 +3,33 @@ let doingArray = []
 let doneArray = []
 
 const isNull = (inputdata) => {
-  let a = inputdata
-  if (a === "") return false
-  return true
+  return inputdata ? true : false
 }
+
+/**서버에서 내릴 예정 */
 const countPlanAmount = (countingList, arr) => {
   countingList.textContent = arr.length
+}
+
+const onClick = (event) => {
+  //id : do, doing, did
+  const { id } = event.target
+
+  //~~~
+  switch (id) {
+    case "do":
+      willDoArray.push()
+      break
+    case "doing":
+      doingArray.push()
+      break
+    case "did":
+      doneArray.push()
+      break
+
+    default:
+      break
+  }
 }
 
 const makePlan = (input, list, countingList, arr, a) => {
