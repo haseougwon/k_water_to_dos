@@ -1,8 +1,8 @@
-const id = document.querySelector("#inputId")
-const pw = document.querySelector("#inputPw")
-const pwc = document.querySelector("#inputPwCheck")
-const name = document.querySelector("#inputName")
-const btn = document.querySelector(".joinBtn")
+const id = document.querySelector(".user_id")
+const pw = document.querySelector(".user_pw")
+const pwc = document.querySelector(".user_pwc")
+const name = document.querySelector(".user_name")
+const btn = document.querySelector(".sign_up_btn")
 
 /**
  * PW, PWC를 받아서 같은 지 검사 후 boolean 반환

@@ -8,66 +8,71 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div id="backgroundImg">
-      <div id="willDoBox"></div>
-      <div id="willDoTextBox"></div>
-      <h1 id="willDoTextBoxTitle">will do</h1>
-      <div id="willDoCountingBox">0</div>
-      <input type="text" id="willDoPlanBox" />
-      <button id="willDoBtn">+</button>
-      <div id="willDoPlanscroll"></div>
-
-      <div id="doingBox"></div>
-      <div id="doingTextBox"></div>
-
-      <h1 id="doingTextBoxTitle">doing</h1>
-      <div id="doingCountingBox">0</div>
-      <input type="text" id="doingPlanBox" />
-      <button id="doingBtn">+</button>
-      <div id="doingPlanscroll"></div>
-
-      <div id="doneBox"></div>
-      <div id="doneTextBox"></div>
-      <h1 id="doneBoxTitle">done</h1>
-      <div id="doneCountingBox">0</div>
-      <input type="text" id="donePlanBox" type="text" />
-      <button id="doneBtn">+</button>
-      <div id="donePlanscroll"></div>
-    </div>
-
     <div class="backgroundImg">
-      <div class="first_box">
-        <div class="second_box">
-          <div class="outside_div">
-            <div class="inside_div">
-              <div class="inside_div_header">
-                <!-- INPUT WITH LOGO -->
-              </div>
-              <div class="inside_div_body">
-                <!-- TO DO LIST -->
-              </div>
-            </div>
-          </div>
-          <div class="outside_div">
-            <div class="inside_div">
-              <div class="inside_div_header">
-                <!-- INPUT WITH LOGO -->
-              </div>
-              <div class="inside_div_body">
-                <!-- TO DO LIST -->
-              </div>
-            </div>
-          </div>
-          <div class="outside_div">
-            <div class="inside_div">
-              <div class="inside_div_header">
-                <!-- INPUT WITH LOGO -->
-              </div>
-              <div class="inside_div_body">
-                <!-- TO DO LIST -->
+      <div class="first_div">
+        <img src="../img/ToDoListLogo.png" alt="ToDoListLogo" class="logo" />
+        <div class="second_div">
+          
+          <div class="main_box">
+            <div class="outside_div">
+              <div class="main_title">Will Do</div>
+              <div class="list_box">
+                <div class="inside_div">
+                  <div class="inside_div_top">
+                    <div class="count_box"></div>
+                    <input type="text" class="plan_input">
+                    <button class="plan_btn"></button>
+                    <!-- INPUT WITH LOGO -->
+                  </div>
+                  <div class="inside_div_middle">
+                    <div class="plan_box"></div>
+                    <!-- TO DO LIST -->
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="main_box" style="left: 563px;">
+            <div class="outside_div">
+              <div class="main_title">Doing</div>
+              <div class="list_box">
+                <div class="inside_div">
+                  <div class="inside_div_top">
+                    <div class="count_box"></div>
+                    <input type="text" class="plan_input">
+                    <button class="plan_btn"></button>
+                    <!-- INPUT WITH LOGO -->
+                  </div>
+                  <div class="inside_div_middle">
+                    <div class="plan_box"></div>
+                    <!-- TO DO LIST -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="main_box" style="left: 1126px;">
+            <div class="outside_div">
+              <div class="main_title">Done</div>
+              <div class="list_box">
+                <div class="inside_div">
+                  <div class="inside_div_top">
+                    <div class="count_box"></div>
+                    <input type="text" class="plan_input">
+                    <button class="plan_btn"></button>
+                    <!-- INPUT WITH LOGO -->
+                  </div>
+                  <div class="inside_div_middle">
+                    <div class="plan_box"></div>
+                    <!-- TO DO LIST -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

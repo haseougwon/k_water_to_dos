@@ -1,73 +1,107 @@
-body {
-  width: 1728px;
+  
+  div {
+    display: block;
+}
+.first_box {
+  position: absolute;
+  width: 450px;
   height: 1117px;
+  left: 667px;
+  top: 0px;
+
+  background-color:transparent;
+}
+.second_box {
+  position: absolute;
+  width: 450px;
+  height: 561px;
+  top: 283px;
+
+  background-color:transparent;
+}
+.top_box {
+  position: absolute;
+  width: 450px;
+  height: 281px;
+
+  background-color:transparent;
+}
+.bottom_box {
+  position: absolute;
+  width: 450px;
+  height: 281px;
+  top: 281px;
+  
+
+  background-color:transparent;
 }
 
-#clickSignUpBox {
+.sign_in_btn {
+  
+
   box-sizing: border-box;
-
+  
   position: absolute;
-  width: 321px;
-  height: 68px;
-  left: 704px;
-  top: 670px;
-
-  opacity: 0.9;
-  border: 3px solid #000000;
-  border-radius: 50px;
-}
-
-#clickSignInBox {
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 321px;
-  height: 68px;
-  left: 704px;
-  top: 761px;
-
-  opacity: 0.9;
-  border: 3px solid #000000;
-  border-radius: 50px;
-}
-#signUpText {
-  position: absolute;
-  width: 144px;
-  height: 48px;
-  left: 792px;
-  top: 650px;
-
+  width: 237px;
+  height: 77px;
+  top: 92px;
+  left: 107px;
+  
+  border-radius: 125px;
+  background-color: white;
   font-family: 'Inter';
   font-style: italic;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 50px;
+  border: 1px solid #ffffff;
+  color: #ffe99c;
 
-  color: #ffffff;
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
-#signInText {
-  position: absolute;
-  width: 129px;
-  height: 48px;
-  left: 800px;
-  top: 741px;
+.sign_up_btn {
+  
 
+  box-sizing: border-box;
+  
+  position: absolute;
+  width: 237px;
+  height: 77px;
+  top: 200px;
+  left: 107px;
+  
+  border-radius: 125px;
+  background-color: white;
+
+  
   font-family: 'Inter';
   font-style: italic;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 48px;
+  border: 1px solid #ffffff;
+  color: #ffe99c;
 
-  color: #ffffff;
+  display: flex;
+  
+  align-items:center;
+  justify-content: center;
+  
+  
 }
+.logo {
+  margin-top: 108px;
+  margin-left: 4px;
+}
+
 body {
   width: 1728px;
   height: 1117px;
   margin: 0px;
-  margin: 0px;
 }
-#backgroundImg {
+.backgroundImg {
   width: 100%;
   height: 100%;
-  background-image: url('../img/image2.png');
+  background-image: url('../img/index.png');
+  display:block
 }

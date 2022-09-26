@@ -1,76 +1,113 @@
-#signInBox {
-    position: absolute;
-    width: 571px;
-    height: 708px;
-    left: 578px;
-    top: 230px;
+.fisrt_box {
+  position: absolute;
+  width: 571px;
+  height: 1117px;
+  left: 578px;
+  top: 0px;
+  
+  background-color: transparent;
+  
+}
 
-    background: #FFE99C;
-    border-radius: 43px;
-  }
-  #signInText {
-    position: absolute;
-    width: 256px;
-    height: 77px;
-    left: 731px;
-    top: 280px;
+.second_box {
+  position: absolute;
+  width: 571px;
+  height: 523px;
+  left: 578px;
+  top: 230px;
 
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
+  background: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+}
 
-    color: #7B7A8E
-        }
+.main_box {
+  position: absolute;
+  width: 571px;
+  height: 523px;
+  background: #FFFFFF;
+  border-radius: 43px;
+}
 
+.top_box {
+  position: absolute;
+  width: 571px;
+  height: 162px;
 
-  #inputId {
-    position: absolute;
-    width: 479px;
-    height: 58px;
-    left: 624px;
-    top: 476px;
+  background: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+}
 
-    background: #FFFFFF;
-    border-radius: 10px;
-  }
-  #inputPw{
-    position: absolute;
-    width: 479px;
-    height: 58px;
-    left: 624px;
-    top: 651px;
+.logo {
+  width: 228px;
+  height: 94px;
+  margin-top: 37px;
+  margin-left: 172px;
+}
 
-    background: #FFFFFF;
-    border-radius: 10px;
-  }
-  #loginBtn {
-    position: absolute;
-    width: 122px;
-    height: 43px;
-    left: 960px;
-    top: 850px;
+.middle_box {
+  position: absolute;
+  width: 574px;
+  height: 322px;
+  margin-top: 168px;
+}
 
-    background: #FFD43C;
-    border-radius: 10px;
-    border-color: #FFD43C;
-    
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+input {
+  box-sizing: border-box;
 
+  position: absolute;
+  width: 479px;
+  height: 58px;
 
-    color: #7B7A8E;
-  }
+  background: #F4F4F4;
+  border: 1px solid #E9E9E9;
+  border-radius: 10px;
+  outline: none;
+}
+
+.user_id {
+  margin-left: 46px;
+}
+
+.user_pw {
+  margin-left: 46px;
+  margin-top: 89px;
+}
+
+.bottom_box {
+  position: absolute;
+  width: 574px;
+  height: 209px;
+  top: 314px;
+
+  background: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  
+}
+
+.sign_in_btn {
+  position: absolute;
+  width: 479px; 
+  height: 58px;
+  left: 46px;
+  top: 82px;;
+
+  background: #FFE99C;
+  border-radius: 10px;
+  border-color: #FFE99C;
+
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #7B7A8E;
+}
   body {
     width: 1728px;
     height: 1117px;
     margin: 0px;
   }
-  #backgroundImg {
+  .backgroundImg {
     width: 100%;
     height: 100%;
     background-image: url('../img/signIn.png');

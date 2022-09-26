@@ -1,7 +1,6 @@
-const inputId = document.querySelector("#inputId")
-const inputPw = document.querySelector("#inputPw")
-const btn = document.querySelector("#loginBtn")
-const h1 = document.querySelector("#logInButtonText")
+const inputId = document.querySelector(".user_id")
+const inputPw = document.querySelector(".user_pw")
+const btn = document.querySelector(".sign_in_btn")
 
 const getInputData = () => {
   return { id: inputId.value, pw: inputPw.value }

@@ -1,88 +1,116 @@
-#signUpBox{
+.fisrt_box {
+    position: absolute;
+    width: 571px;
+    height: 1117px;
+    left: 578px;
+    background: rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    
+}
+
+.second_box {
     position: absolute;
     width: 571px;
     height: 708px;
     left: 578px;
-    top: 230px;
-    background: #FFE99C;
+    top: 143px;
+    background: rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+}
+
+.main_box {
+    position: absolute;
+    width: 571px;
+    height: 708px;
+    background: #FFFFFF;
     border-radius: 43px;
 }
-#signUpText {
+
+.top_box {
     position: absolute;
-    width: 259px;
-    height: 77px;
-    left: 731px;
-    top: 230px;
+    width: 571px;
+    height: 168px;
+    background: rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+}
+
+.logo {
+    width: 228px;
+    height: 94px;
+    margin-top: 44px;
+    margin-left: 172px;
+}
+
+.middle_box {
+    position: absolute;
+    width: 571px;
+    height: 322px;
+    margin-top: 168px;
+}
+
+input {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 479px;
+    height: 58px;
+
+    background: #F4F4F4;
+    border: 1px solid #E9E9E9;
+    border-radius: 10px;
+    outline: none;
+}
+.user_name {
+    margin-left: 46px;
+}
+
+.user_id {
+    margin-left: 46px;
+    margin-top: 88px;
+}
+
+.user_pw {
+    margin-left: 46px;
+    margin-top: 176px;
+}
+
+.user_pwc {
+    margin-left: 46px;
+    margin-top: 260px;
+}
+
+.bottom_box {
+    position: absolute;
+    width: 571px;
+    height: 218px;
+    margin-top: 490px;
+    
+}
+
+.sign_up_btn {
+    position: absolute;
+    width: 479px;
+    height: 58px;
+    left: 47px;
+    top: 95px;
+
+    background: #FFE99C;
+    border-radius: 10px;
+    border-color: #FFE99C;
+
     font-family: 'Inter';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 63px;
-    line-height: 77px;
-    color: #7B7A8E;
-}
-#inputName {
-    position: absolute;
-    width: 479px;
-    height: 58px;
-    left: 624px;
-    top: 394px;
-    background: #FFFFFF;
-    border-radius: 10px;
-}
-#inputId {
-    position: absolute;
-    width: 479px;
-    height: 58px;
-    left: 624px;
-    top: 476px;
-    background: #FFFFFF;
-    border-radius: 10px;
-
-}
-#inputPw {
-    position: absolute;
-    width: 479px;
-    height: 58px;
-    left: 624px;
-    top: 558px;
-
-    background: #FFFFFF;
-    border-radius: 10px;
-}
-#inputPwCheck {
-    position: absolute;
-    width: 479px;
-    height: 58px;
-    left: 624px;
-    top: 640px;
-    background: #FFFFFF;
-    border-radius: 10px;
-}
-.joinBtn{
-    position: absolute;
-    width: 122px;
-    height: 43px;
-    left: 960px;
-    top: 850px;
-    background: #FFD43C;
-    border-radius: 10px;
-    border-color: #FFD43C;
-    font-family: 'inter';
     font-style: italic;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     color: #7B7A8E;
-
-    
 }
-
 body {
     width: 1728px;
     height: 1117px;
     margin: 0px;
 }
-#backgroundImg {
+.backgroundImg {
     width: 100%;
     height: 100%;
     background-image: url('../img/signIn.png');
