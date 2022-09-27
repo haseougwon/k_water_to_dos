@@ -13,18 +13,14 @@ const checkNullValue = (arr) => {
   return true
 }
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", async () => {
   const { id, pw } = getInputData()
   if (!checkNullValue([id, pw])) return alert("null error")
-
-  axios({
-    method: "post",
-    url: "http://210.90.136.10:3000/auth/login",
-    data: { id: id, pw: pw },
-  })
-    .then((res) => {
-      if (!res.data) alert("err")
-      else window.location.replace("./main.html")
-    })
-    .catch((err) => console.log(err))
+  try {
+    const { data } = await axios.post("http://210.90.136.10:3000/auth/login", { id : id, pw : pw } )
+    data ? (window.location.href = "./index.html") : alert("err")
+  } 
+  catch (error) {
+      console.log(error)
+  }
 })

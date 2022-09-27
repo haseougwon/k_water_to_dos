@@ -9,13 +9,5 @@ const clickRegisterBtn = () => {
   return (window.location.href = "../pages/register.html")
 }
 
-// const onClick = (event) => {
-//   const { id } = event.target
-//   if (id == "clickSignUpBox")
-//     return (window.location.href = "../pages/register.html")
-//   if (id == "clickSignInBox")
-//     return (window.location.href = "../pages/login.html")
-// }
-
 loginBtn.addEventListener("click", clickLoginBtn)
 registerBtn.addEventListener("click", clickRegisterBtn)

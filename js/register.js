@@ -26,26 +26,18 @@ const checkNullValue = (arr) => {
   return true
 }
 
-const callApi = async (id, pw, name) => {
-  const config = {
-    method: "post",
-    url: "http://210.90.136.10:3000/auth/",
-    data: { id, pw, name },
-  }
-  try {
-    const { data } = await axios(config)
-    return data
-  } catch (err) {
-    return alert(err)
-  }
-}
 
 const onClick = async () => {
   const { id, pw, pwc, name } = getInputData()
   if (!checkNullValue([id, pw, pwc, name])) return alert("NULL ERROR")
   if (!checkSameValue(pw, pwc)) return alert("NOT SAME ERROR")
-  const data = await callApi(id, pw, name)
-  data ? (window.location.href = "./login.html") : alert("err")
+  try {
+    const { data } = await axios.post("http://210.90.136.10:3000/auth/", { id : id, pw : pw, name : name} )
+    data ? (window.location.href = "./login.html") : alert("err")
+  } 
+  catch (error) {
+      console.log(error)
+  }
 }
 
 btn.addEventListener("click", onClick)
